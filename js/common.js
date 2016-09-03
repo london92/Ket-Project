@@ -100,6 +100,7 @@ app.directive("completeTask",function () {
                    scope.desc = "JOKES TOLDS";
                }
             scope.start = 0;
+            scope.stop_1,scope.stop_2,scope.stop_2,scope.stop_4;
             var img = angular.element("<img>").attr("src",scope.src);
             elem.append(img);
             var number = angular.element("<p>").text(scope.start);
@@ -113,28 +114,81 @@ app.directive("completeTask",function () {
                     var docViewTop = $(window).scrollTop(),
                         docViewBottom = docViewTop + $(window).height();
                     if((scope.elemBottom <= docViewBottom) && (scope.elemTop <= docViewTop)){
-                        if(attr.completeTask == "COMPLETED PROJECTS"){
-                            var num = 3054;
-                            var interval = setInterval(function () {
-                                if(interval){
-                                    return
-                                }
-                                num = num + 1;
-                                number.text(num)
-                            },1000)
+                        if(attr.completeTask == "COMPLETED PROJECTS") {
+                            var add = parseInt(3054 / 30);
+                            var num = 0;
+                            if (scope.stop_1 == 3054) {
+                                return
+                            }
+                            else {
+                                var interval = setInterval(function () {
+                                    num = num + add;
+                                    number.text(num)
+                                    if (num >= 3054) {
+                                        num = 3054;
+                                        number.text(num)
+                                        scope.stop_1 = num;
+                                        clearInterval(interval);
+                                    }
+                                }, 100)
+                            }
                         }
                         else if(attr.completeTask == "CLICK PRESED"){
-                           var num = 7234873;
-                            var interval = setInterval(function () {
-                                num = num + 1;
-                                number.text(num)
-                            },1000)
+                            var add = parseInt(7234873/30);
+                            var num = 0;
+                            if(scope.stop_2 == 7234873){
+                                return
+                            }
+                            else {
+                                var interval = setInterval(function () {
+                                    num = num + add;
+                                    number.text(num)
+                                    if(num >= 7234873){
+                                        num = 7234873;
+                                        number.text(num)
+                                        scope.stop_2 = num;
+                                        clearInterval(interval);
+                                    }
+                                },100)
+                            }
                         }
                         else if(attr.completeTask == "MAILS SENTED & RECIVED"){
-                            num = 4670;
+                            var add = parseInt(4670/30);
+                            var num = 0;
+                            if(scope.stop_3 == 4670){
+                                return
+                            }
+                            else {
+                                var interval = setInterval(function () {
+                                    num = num + add;
+                                    number.text(num)
+                                    if(num >= 4670){
+                                        num = 4670;
+                                        number.text(num)
+                                        scope.stop_3 = num;
+                                        clearInterval(interval);
+                                    }
+                                },100)
+                            }
                         }
                         else if(attr.completeTask == "JOKES TOLDS"){
-                            num = 939;
+                            var add = parseInt(939/30);
+                            var num = 0;
+                                if(scope.stop_4 == 939){
+                                    return
+                                }
+                                else {
+                                    var interval = setInterval(function () {
+                                        num = num + add;
+                                        number.text(num)
+                                        if(num >= 939){
+                                            num = 939;
+                                            number.text(num)
+                                            scope.stop_4 = num;
+                                            clearInterval(interval);
+                                        }
+                                    },100)
+                                }
                         }
                         number.text(num);
                     }

@@ -33,28 +33,28 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="443">
-                  <caret line="145" column="7" selection-start-line="145" selection-start-column="7" selection-end-line="152" selection-end-column="14" />
+                <state relative-caret-position="545">
+                  <caret line="151" column="40" selection-start-line="151" selection-start-column="40" selection-end-line="151" selection-end-column="40" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="common.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="common.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/js/common.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="466">
-                  <caret line="119" column="42" selection-start-line="119" selection-start-column="42" selection-end-line="119" selection-end-column="42" />
+                <state relative-caret-position="517">
+                  <caret line="190" column="33" selection-start-line="190" selection-start-column="33" selection-end-line="190" selection-end-column="33" />
                   <folding>
-                    <marker date="1472922298649" expanded="true" signature="7770:8445" placeholder="..." />
-                    <marker date="1472922298649" expanded="true" signature="7810:8421" placeholder="..." />
-                    <marker date="1472922298649" expanded="true" signature="7894:8397" placeholder="..." />
-                    <marker date="1472922298649" expanded="true" signature="7938:8104" placeholder="..." />
-                    <marker date="1472922298649" expanded="true" signature="8142:8210" placeholder="..." />
-                    <marker date="1472922298649" expanded="true" signature="8250:8373" placeholder="..." />
+                    <marker date="1472929326053" expanded="true" signature="10533:11208" placeholder="..." />
+                    <marker date="1472929326053" expanded="true" signature="10573:11184" placeholder="..." />
+                    <marker date="1472929326053" expanded="true" signature="10657:11160" placeholder="..." />
+                    <marker date="1472929326053" expanded="true" signature="10701:10867" placeholder="..." />
+                    <marker date="1472929326053" expanded="true" signature="10905:10973" placeholder="..." />
+                    <marker date="1472929326053" expanded="true" signature="11013:11136" placeholder="..." />
                   </folding>
                 </state>
               </provider>
@@ -99,8 +99,8 @@
         <option value="$PROJECT_DIR$/libs/angular-animate.min.js" />
         <option value="$PROJECT_DIR$/libs/viewport.js" />
         <option value="$PROJECT_DIR$/css/style.css" />
-        <option value="$PROJECT_DIR$/js/common.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js/common.js" />
       </list>
     </option>
   </component>
@@ -332,12 +332,12 @@
       <workItem from="1472801810125" duration="619000" />
       <workItem from="1472832035231" duration="1120000" />
       <workItem from="1472862211566" duration="597000" />
-      <workItem from="1472904875075" duration="14156000" />
+      <workItem from="1472904875075" duration="20525000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88540000" />
+    <option name="totallyTimeSpent" value="94909000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -730,26 +730,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/common.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="119" column="42" selection-start-line="119" selection-start-column="42" selection-end-line="119" selection-end-column="42" />
-          <folding>
-            <marker date="1472922298649" expanded="true" signature="7770:8445" placeholder="..." />
-            <marker date="1472922298649" expanded="true" signature="7810:8421" placeholder="..." />
-            <marker date="1472922298649" expanded="true" signature="7894:8397" placeholder="..." />
-            <marker date="1472922298649" expanded="true" signature="7938:8104" placeholder="..." />
-            <marker date="1472922298649" expanded="true" signature="8142:8210" placeholder="..." />
-            <marker date="1472922298649" expanded="true" signature="8250:8373" placeholder="..." />
-          </folding>
+        <state relative-caret-position="545">
+          <caret line="151" column="40" selection-start-line="151" selection-start-column="40" selection-end-line="151" selection-end-column="40" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/js/common.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="145" column="7" selection-start-line="145" selection-start-column="7" selection-end-line="152" selection-end-column="14" />
-          <folding />
+        <state relative-caret-position="517">
+          <caret line="190" column="33" selection-start-line="190" selection-start-column="33" selection-end-line="190" selection-end-column="33" />
+          <folding>
+            <marker date="1472929326053" expanded="true" signature="10533:11208" placeholder="..." />
+            <marker date="1472929326053" expanded="true" signature="10573:11184" placeholder="..." />
+            <marker date="1472929326053" expanded="true" signature="10657:11160" placeholder="..." />
+            <marker date="1472929326053" expanded="true" signature="10701:10867" placeholder="..." />
+            <marker date="1472929326053" expanded="true" signature="10905:10973" placeholder="..." />
+            <marker date="1472929326053" expanded="true" signature="11013:11136" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
