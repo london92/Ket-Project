@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>K E T</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="libs/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="libs/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" rel="stylesheet"/>
+    <link href="libs/font-awesome-4.6.3/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet"/>
+</head>
+<body>
+    <nav class="navbar navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo.png">
+                </a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="" scroll-to="header">home</a> </li>
+                <li><a href="" scroll-to="services">services</a> </li>
+                <li><a href="" scroll-to="portfolio">PORTFOLIO</a> </li>
+                <li><a href="" scroll-to="about">about</a> </li>
+                <li><a href="" scroll-to="news">NEWS</a> </li>
+                <li><a href="" scroll-to="contacts">contacts</a> </li>
+            </ul>
+        </div>
+    </nav>
+    <header id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>WE MAKE WEBSITES</h1>
+                    <div class="header_btn" scroll-to="portfolio">
+                        <p>START TOUR</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="services" class="bg_white" ng-controller="serviceCtrl">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 service_item">
+                    <img src="img/service_web.png" alt="service_web" title="WEB DESIGN" ng-click="show_text(1)"/>
+                    <p>WEB DESIGN</p>
+                </div>
+                <div class="col-md-3 service_item">
+                    <img src="img/service_graphic.png" alt="service_graphic" title="GRAPHIC DESIGN" ng-click="show_text(2)"/>
+                    <p>GRAPHIC DESIGN</p>
+                </div>
+                <div class="col-md-3 service_item">
+                    <img src="img/service_programming.png" alt="service_programming" title="PROGRAMMING" ng-click="show_text(3)"/>
+                    <p>PROGRAMMING</p>
+                </div>
+                <div class="col-md-3 service_item">
+                    <img src="img/service_photography.png" alt="service_photography" title="PHOTOGRAPHY" ng-click="show_text(4)"/>
+                    <p>PHOTOGRAPHY</p>
+                </div>
+            </div>
+            <div class="row" ng-switch="text">
+                <div class="col-md-10 col-md-offset-1 service_text" ng-switch-when="1">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute i
+                        rure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="col-md-10 col-md-offset-1 service_text" ng-switch-when="2">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute i
+                        rure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident,</p>
+                </div>
+                <div class="col-md-10 col-md-offset-1 service_text" ng-switch-when="3">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute i
+                        rure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                </div>
+                <div class="col-md-10 col-md-offset-1 service_text" ng-switch-when="4">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute i
+                        rure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                       ,</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg_light">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-2 service_content_btn">
+                    <p>START TOUR</p>
+                </div>
+                <div class="col-md-4 service_content_btn active_service">
+                    <p>FOR ALL DEVICES</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-md-offset-2 service_phones">
+                    <img src="img/service_phones.png" alt="phones" title="iPhone">
+                </div>
+                <div class="col-md-5 service_content">
+                    <h2>Fully Responsive</h2>
+                    <p>Eum cu tantas legere complectitur, hinc utamur ea eam. Lorem ipsum dolor sit amet, volumus temporibus definitionem id ius, vel ut magna timeam appareat, movet timeam maiorum an ius.</br>
+                        Sea libris dictas lucilius et. Ne cibo urbanitas pri, qui ad populo accusamus. Quod congue ea ius, nisl aperiri sit ut.</p>
+                    <a href="" scroll-to="contacts">get now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio" class="bg_white" ng-controller="portfolioCtrl">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1 section_title">
+                    <h3>Our Portfolio</h3>
+                    <hr>
+                    <p>Eum cu tantas legere complectitur, hinc utamur ea eam. Eum patrioque mnesarchum eu, diam erant convenire et vis. Et essent evertitur sea, vis cu ubique referrentur, sed eu dicant expetendis.</p>
+                </div>
+            </div>
+            <div class="row portfolio_nav">
+                <div class="col-md-1 col-md-offset-3 portfolio_nav_item" ng-click="portfolio_item_show('ALL')">
+                    <p>all</p>
+                </div>
+                <div class="col-md-1 portfolio_nav_item" ng-click="portfolio_item_show('WEB')">
+                    <p>web</p>
+                </div>
+                <div class="col-md-2 portfolio_nav_item" ng-click="portfolio_item_show('PHOTOGRAPHY')">
+                    <p>PHOTOGRAPHY</p>
+                </div>
+                <div class="col-md-2 portfolio_nav_item" ng-click="portfolio_item_show('GRAPHIC DESIGN')">
+                    <p>GRAPHIC DESIGN</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2 portfolio_item"  ng-repeat="item in portfolio_items | filter:portfolio_filter">
+                    <img src="{{item.src}}">
+                    <div class="portfolio_item_hover">
+                        <h4>{{item.header}}</h4>
+                        <p>{{item.name}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg_black porfolio_complete">
+            <div class="row">
+                <div class="col-md-2 col-md-offset-2 task" complete-task="COMPLETED PROJECTS"></div>
+                <div class="col-md-2 task" complete-task="CLICK PRESED"></div>
+                <div class="col-md-2 task" complete-task="MAILS SENTED & RECIVED"></div>
+                <div class="col-md-2 task" complete-task="JOKES TOLDS"></div>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="bg_white" ng-controller="aboutCtrl">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1 section_title">
+                    <h3>We are the one</h3>
+                    <hr>
+                    <p>Eum cu tantas legere complectitur, hinc utamur ea eam. Eum patrioque mnesarchum eu, diam erant convenire et vis. Et essent evertitur sea, vis cu ubique referrentur, sed eu dicant expetendis.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div team-item info-attr="information[0]" class="col-md-3 team_item"></div>
+                <div team-item info-attr="information[1]" class="col-md-3 team_item"></div>
+                <div team-item info-attr="information[2]" class="col-md-3 team_item"></div>
+                <div team-item info-attr="information[3]" class="col-md-3 team_item"></div>
+            </div>
+        </div>
+    </section>
+    <section id="news" class="bg_white" ng-controller="newsCtrl">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1 section_title">
+                    <h3>Check our news</h3>
+                    <hr>
+                    <p>Eum cu tantas legere complectitur, hinc utamur ea eam. Eum patrioque mnesarchum eu, diam erant convenire et vis. Et essent evertitur sea, vis cu ubique referrentur, sed eu dicant expetendis.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container news_content">
+            <div class="row news_item no_animate" ng-repeat="item in news">
+                <div class="col-md-1">
+                    <h5>{{item.date| date : "d"}}</h5>
+                    <p>{{item.date| date : "MMMM"}}</p>
+                </div>
+                <div class="col-md-10 col-md-offset-1 news_text">
+                    <p>{{item.text}}</p>
+                    <div class="news_btn">
+                        <p ng-click="go_to($index + 1)">Read More</p>
+                    </div>
+                </div>
+                <div ng-view></div>
+            </div>
+        </div>
+    </section>
+    <section id="contacts" ng-controller="contactsCtrl">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1 section_title">
+                    <h3>Contact Us</h3>
+                    <hr>
+                    <p>Eum cu tantas legere complectitur, hinc utamur ea eam. Eum patrioque mnesarchum eu, diam erant convenire et vis. Et essent evertitur sea, vis cu ubique referrentur, sed eu dicant expetendis.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <form novalidate name="myForm">
+                <div class="row input_wrap">
+                    <div class="col-md-6">
+                        <input name="user_name" ng-model="user.name" required type="text" placeholder="Your name here" ng-pattern="name_regex">
+                        <p class="error" ng-show="myForm.user_name.$invalid && myForm.user_name.$dirty">{{show_error("name")}}</p>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="email" ng-model="user.email" name="user_email" required ng-pattern="email_regex" placeholder="Your mail here">
+                        <p class="error" ng-show="myForm.user_email.$invalid && myForm.user_email.$dirty">{{show_error("mail")}}</p>
+                    </div>
+                </div>
+                <div class="row input_wrap">
+                    <div class="col-md-12">
+                        <input type="text" placeholder="Your message here" ng-model="user.message" name="user_message" ng-pattern="message_regex" required>
+                        <p class="error" ng-show="myForm.user_message.$invalid && myForm.user_message.$dirty">{{show_error("message")}}</p>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2 col-md-offset-10">
+                        <div class="header_btn" ng-click="send_message()">
+                            <p>Send Message</p>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="container-fluid bg_dark">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4 contact_info">
+                    <p>Awesome Address 432</p>
+                    <p>ourmail@sometype.com</p>
+                    <p>+321(0)32 123 343 49</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>&copy; 2014 - <span>Kat</span> All Right Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="libs/jquery-3.1.0.min.js"></script>
+    <script src="libs/viewport.js"></script>
+    <script src="libs/angular.min.js"></script>
+    <script src="libs/angular_route.js"></script>
+    <script src="libs/angular-cookies.js"></script>
+    <script src="libs/angular-animate.min.js"></script>
+    <script src="libs/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="libs/ngSmoothScroll-master/lib/angular-smooth-scroll.js"></script>
+    <script src="js/common.js"></script>
+</body>
+</html>
