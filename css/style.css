@@ -18,9 +18,12 @@
     font-family: Raleway_extralight;
     src: url(../fonts/Raleway-ExtraLight.ttf);
 }
-html,h1,h2,h3,h4,h5,h6,p,li,ul{
+html,h1,h2,h3,h4,h5,h6,p,li,ul,div{
     margin: 0;
     padding: 0;
+}
+body{
+    position: relative;
 }
 .bg_white{
     background-color: #fff;
@@ -30,8 +33,26 @@ html,h1,h2,h3,h4,h5,h6,p,li,ul{
 }
 nav{
     background-color: #fff;
-    padding-bottom: 15px;
 }
+nav ul li{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: 2px solid #fff;
+}
+nav ul li:hover{
+    border-bottom: 2px solid #00e1ff;
+}
+nav ul li:hover a{
+    color: #00e1ff;
+    background-color: #fff!important;
+}
+nav ul li a:visited{
+    background-color: #fff!important;
+}
+/*.nav  li  a:focus {
+    color: #00e1ff !important;
+    background-color: transparent;
+}*/
 nav ul li a{
     text-transform: uppercase;
     text-align: center;
@@ -39,11 +60,6 @@ nav ul li a{
     color: #3f4244;
     font-family: Raleway_light;
     display: block;
-}
-nav ul li a:hover{
-    color: #00e1ff;
-    border-bottom: 1px solid #00e1ff;
-    background-color: #fff!important;
 }
 header{
     background-image: url("../img/header_bg.jpg");
@@ -92,6 +108,56 @@ header h1{
     color: #3f4244;
     font-family: Raleway_medium;
     font-size: 15px;
+}
+.service_item hr{
+    width: 70px;
+    height: 2px;
+    background-color: #00e1ff;
+    margin: 20px auto 0;
+}
+div[ng-switch-when="1"] .my_border{
+    width: 70px;
+    height: 60px;
+    border-right: 2px solid #00e1ff;
+    border-bottom: 2px solid #fff;
+    z-index: 999;
+    position: relative;
+}
+div[ng-switch-when="2"] .my_border{
+    width: 70px;
+    height: 60px;
+    border-right: 2px solid #00e1ff;
+    border-left: 2px solid #00e1ff;
+    border-bottom: 2px solid #fff;
+    z-index: 999;
+    position: relative;
+    margin-left: 30.8%;
+}
+div[ng-switch-when="3"] .my_border{
+    width: 70px;
+    height: 60px;
+    border-right: 2px solid #00e1ff;
+    border-left: 2px solid #00e1ff;
+    border-bottom: 2px solid #fff;
+    z-index: 999;
+    position: relative;
+    margin-left: 61.8%;
+}
+div[ng-switch-when="4"] .my_border{
+    width: 70px;
+    height: 60px;
+    border-left: 2px solid #00e1ff;
+    border-bottom: 2px solid #fff;
+    z-index: 999;
+    position: relative;
+    margin-left: 92.6%;
+}
+.service_text hr{
+    height: 2px;
+    background-color: #00e1ff;
+    width: 100%;
+    margin-top: -2px;
+    border: none;
 }
 .service_text p{
     color: #929ba0;

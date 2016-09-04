@@ -13,19 +13,23 @@
 <body>
     <nav class="navbar navbar-fixed-top">
         <div class="container">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#">
-                    <img src="img/logo.png">
-                </a>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="" scroll-to="header">
+                            <img src="img/logo.png">
+                        </a>
+                    </div>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="" scroll-to="header">home</a> </li>
+                        <li><a href="" scroll-to="services">services</a> </li>
+                        <li><a href="" scroll-to="portfolio">PORTFOLIO</a> </li>
+                        <li><a href="" scroll-to="about">about</a> </li>
+                        <li><a href="" scroll-to="news">NEWS</a> </li>
+                        <li><a href="" scroll-to="contacts">contacts</a> </li>
+                    </ul>
+                </div>
             </div>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="" scroll-to="header">home</a> </li>
-                <li><a href="" scroll-to="services">services</a> </li>
-                <li><a href="" scroll-to="portfolio">PORTFOLIO</a> </li>
-                <li><a href="" scroll-to="about">about</a> </li>
-                <li><a href="" scroll-to="news">NEWS</a> </li>
-                <li><a href="" scroll-to="contacts">contacts</a> </li>
-            </ul>
         </div>
     </nav>
     <header id="header">
@@ -46,39 +50,51 @@
                 <div class="col-md-3 service_item">
                     <img src="img/service_web.png" alt="service_web" title="WEB DESIGN" ng-click="show_text(1)"/>
                     <p>WEB DESIGN</p>
+                    <hr/>
                 </div>
                 <div class="col-md-3 service_item">
                     <img src="img/service_graphic.png" alt="service_graphic" title="GRAPHIC DESIGN" ng-click="show_text(2)"/>
                     <p>GRAPHIC DESIGN</p>
+                    <hr/>
                 </div>
                 <div class="col-md-3 service_item">
                     <img src="img/service_programming.png" alt="service_programming" title="PROGRAMMING" ng-click="show_text(3)"/>
                     <p>PROGRAMMING</p>
+                    <hr/>
                 </div>
                 <div class="col-md-3 service_item">
                     <img src="img/service_photography.png" alt="service_photography" title="PHOTOGRAPHY" ng-click="show_text(4)"/>
                     <p>PHOTOGRAPHY</p>
+                    <hr/>
                 </div>
             </div>
             <div class="row" ng-switch="text">
-                <div class="col-md-10 col-md-offset-1 service_text" ng-switch-when="1">
+                <div class="col-md-10 col-md-offset-1 service_text no_animate" ng-switch-when="1">
+                    <div class="my_border"></div>
+                    <hr/>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute i
                         rure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
                         non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
-                <div class="col-md-10 col-md-offset-1 service_text" ng-switch-when="2">
+                <div class="col-md-10 col-md-offset-1 service_text no_animate" ng-switch-when="2">
+                    <div class="my_border"></div>
+                    <hr/>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute i
                         rure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
                         non proident,</p>
                 </div>
-                <div class="col-md-10 col-md-offset-1 service_text" ng-switch-when="3">
+                <div class="col-md-10 col-md-offset-1 service_text no_animate" ng-switch-when="3">
+                    <div class="my_border"></div>
+                    <hr/>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute i
                         rure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
                 </div>
-                <div class="col-md-10 col-md-offset-1 service_text" ng-switch-when="4">
+                <div class="col-md-10 col-md-offset-1 service_text no_animate" ng-switch-when="4">
+                    <div class="my_border"></div>
+                    <hr/>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute i
                         rure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
