@@ -9,12 +9,13 @@
     <link href="libs/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" rel="stylesheet"/>
     <link href="libs/font-awesome-4.6.3/css/font-awesome.min.css" rel="stylesheet"/>
     <link href="css/style.css" rel="stylesheet"/>
+    <link href="css/media.css" rel="stylesheet"/>
 </head>
 <body>
     <nav class="navbar navbar-fixed-top">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12 col-xs-12">
                     <div class="navbar-header">
                         <a class="navbar-brand" href="" scroll-to="header">
                             <img src="img/logo.png">
@@ -47,22 +48,22 @@
     <section id="services" class="bg_white" ng-controller="serviceCtrl">
         <div class="container">
             <div class="row">
-                <div class="col-md-3 service_item">
+                <div class="col-md-3 col-xs-3 service_item">
                     <img src="img/service_web.png" alt="service_web" title="WEB DESIGN" ng-click="show_text(1)"/>
                     <p>WEB DESIGN</p>
                     <hr/>
                 </div>
-                <div class="col-md-3 service_item">
+                <div class="col-md-3 col-xs-3 service_item">
                     <img src="img/service_graphic.png" alt="service_graphic" title="GRAPHIC DESIGN" ng-click="show_text(2)"/>
                     <p>GRAPHIC DESIGN</p>
                     <hr/>
                 </div>
-                <div class="col-md-3 service_item">
+                <div class="col-md-3 col-xs-3 service_item">
                     <img src="img/service_programming.png" alt="service_programming" title="PROGRAMMING" ng-click="show_text(3)"/>
                     <p>PROGRAMMING</p>
                     <hr/>
                 </div>
-                <div class="col-md-3 service_item">
+                <div class="col-md-3 col-xs-3 service_item">
                     <img src="img/service_photography.png" alt="service_photography" title="PHOTOGRAPHY" ng-click="show_text(4)"/>
                     <p>PHOTOGRAPHY</p>
                     <hr/>
@@ -104,18 +105,18 @@
         </div>
         <div class="container-fluid bg_light">
             <div class="row">
-                <div class="col-md-4 col-md-offset-2 service_content_btn">
+                <div class="col-md-4 col-md-offset-2 col-xs-4 col-xs-offset-2 service_content_btn">
                     <p>START TOUR</p>
                 </div>
-                <div class="col-md-4 service_content_btn active_service">
+                <div class="col-md-4 col-xs-4 service_content_btn active_service">
                     <p>FOR ALL DEVICES</p>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4 col-md-offset-2 service_phones">
-                    <img src="img/service_phones.png" alt="phones" title="iPhone">
+                <div class="col-md-4 col-md-offset-2 col-xs-4 col-xs-offset-2 service_phones">
+                    <img class="img-responsive" src="img/service_phones.png" alt="phones" title="iPhone">
                 </div>
-                <div class="col-md-5 service_content">
+                <div class="col-md-5 col-xs-5 service_content">
                     <h2>Fully Responsive</h2>
                     <p>Eum cu tantas legere complectitur, hinc utamur ea eam. Lorem ipsum dolor sit amet, volumus temporibus definitionem id ius, vel ut magna timeam appareat, movet timeam maiorum an ius.</br>
                         Sea libris dictas lucilius et. Ne cibo urbanitas pri, qui ad populo accusamus. Quod congue ea ius, nisl aperiri sit ut.</p>
@@ -150,7 +151,7 @@
         </div>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-2 portfolio_item"  ng-repeat="item in portfolio_items | filter:portfolio_filter">
+                <div class="col-md-2 col-xs-6 portfolio_item"  ng-repeat="item in portfolio_items | filter:portfolio_filter">
                     <img src="{{item.src}}">
                     <div class="portfolio_item_hover">
                         <h4>{{item.header}}</h4>
@@ -162,10 +163,10 @@
         <div class="container-fluid bg_black porfolio_complete">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3 task" complete-task="COMPLETED PROJECTS"></div>
-                    <div class="col-md-3 task" complete-task="CLICK PRESED"></div>
-                    <div class="col-md-3 task" complete-task="MAILS SENTED & RECIVED"></div>
-                    <div class="col-md-3 task" complete-task="JOKES TOLDS"></div>
+                    <div class="col-md-3 col-sm-6 task" complete-task="COMPLETED PROJECTS"></div>
+                    <div class="col-md-3 col-sm-6 task" complete-task="CLICK PRESED"></div>
+                    <div class="col-md-3 col-sm-6 task" complete-task="MAILS SENTED & RECIVED"></div>
+                    <div class="col-md-3 col-sm-6 task" complete-task="JOKES TOLDS"></div>
                 </div>
             </div>
         </div>
@@ -180,10 +181,10 @@
                 </div>
             </div>
             <div class="row">
-                <div team-item info-attr="information[0]" class="col-md-3 team_item"></div>
-                <div team-item info-attr="information[1]" class="col-md-3 team_item"></div>
-                <div team-item info-attr="information[2]" class="col-md-3 team_item"></div>
-                <div team-item info-attr="information[3]" class="col-md-3 team_item"></div>
+                <div team-item info-attr="information[0]" class="col-md-3 col-sm-6 col-xs-12 team_item"></div>
+                <div team-item info-attr="information[1]" class="col-md-3 col-sm-6 col-xs-12 team_item"></div>
+                <div team-item info-attr="information[2]" class="col-md-3 col-sm-6 col-xs-12 team_item"></div>
+                <div team-item info-attr="information[3]" class="col-md-3 col-sm-6 col-xs-12 team_item"></div>
             </div>
         </div>
     </section>
